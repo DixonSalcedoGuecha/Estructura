@@ -1,0 +1,9 @@
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\bin\Debug\netcoreapp3.1\Modelo.deps.json
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\bin\Debug\netcoreapp3.1\Modelo.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\bin\Debug\netcoreapp3.1\Modelo.pdb
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.csprojAssemblyReference.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.AssemblyInfoInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.AssemblyInfo.cs
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.csproj.CoreCompileInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Modelo\obj\Debug\netcoreapp3.1\Modelo.pdb

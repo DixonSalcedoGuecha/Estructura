@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="VISTA\Ajustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\BarraDeCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\Directorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\PRODUCTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VISTA\RegistrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

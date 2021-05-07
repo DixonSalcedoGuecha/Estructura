@@ -1,0 +1,17 @@
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.exe
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.deps.json
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.runtimeconfig.json
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.runtimeconfig.dev.json
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\bin\Debug\netcoreapp3.1\InicioSesion.pdb
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.csprojAssemblyReference.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\dienoClase.InicioSesion.resources
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.Properties.Resources.resources
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.csproj.GenerateResource.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.AssemblyInfoInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.AssemblyInfo.cs
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.csproj.CoreCompileInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.pdb
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.genruntimeconfig.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\InicioSesion.VISTA.IdMenuPrincipal.resources

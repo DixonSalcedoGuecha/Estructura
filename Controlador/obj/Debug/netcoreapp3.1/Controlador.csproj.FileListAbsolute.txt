@@ -1,0 +1,12 @@
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\bin\Debug\netcoreapp3.1\Controlador.deps.json
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\bin\Debug\netcoreapp3.1\Controlador.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\bin\Debug\netcoreapp3.1\Controlador.pdb
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\bin\Debug\netcoreapp3.1\Modelo.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\bin\Debug\netcoreapp3.1\Modelo.pdb
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.csprojAssemblyReference.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.AssemblyInfoInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.AssemblyInfo.cs
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.csproj.CoreCompileInputs.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.csproj.CopyComplete
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.dll
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\Controlador\obj\Debug\netcoreapp3.1\Controlador.pdb
