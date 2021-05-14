@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\dienoClase\\Vista.csproj": {}
+    "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\dienoClase\\Vista.csproj": {}
   },
   "projects": {
-    "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\Controlador.csproj": {
+    "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\Controlador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\Controlador.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\Controlador.csproj",
         "projectName": "Controlador",
-        "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\Controlador.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\Controlador.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj": {
-                "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj"
+              "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj"
               }
             }
           }
@@ -64,25 +64,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\dienoClase\\Vista.csproj": {
+    "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\dienoClase\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\dienoClase\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\dienoClase\\Vista.csproj",
         "projectName": "Vista",
-        "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\dienoClase\\Vista.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\dienoClase\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\dienoClase\\Vista.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\dienoClase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -98,11 +98,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\Controlador.csproj": {
-                "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Controlador\\Controlador.csproj"
+              "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\Controlador.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Controlador\\Controlador.csproj"
               },
-              "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj": {
-                "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj"
+              "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj"
               }
             }
           }
@@ -134,25 +134,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj": {
+    "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj",
         "projectName": "Modelo",
-        "projectPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\Modelo.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "E:\\UNIVERSIDAD\\ESTRUCTURA DE DATOS\\Modelo\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\Modelo.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Javeriana\\Git\\Estructura\\Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -200,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

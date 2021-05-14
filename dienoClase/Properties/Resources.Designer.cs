@@ -63,6 +63,16 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asdas {
+            get {
+                object obj = ResourceManager.GetObject("asdas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BUSQUEDA {
             get {
                 object obj = ResourceManager.GetObject("BUSQUEDA", resourceCulture);
