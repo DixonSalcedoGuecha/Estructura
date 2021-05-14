@@ -88,7 +88,7 @@ namespace dienoClase
             {
                 lblErrorMessage.Visible = false;
                 ControlUsuario userControl = new ControlUsuario();
-                var Validar = userControl.loginUser((int)Convert.ToInt64(txtUsuario.Text),txtContrasena.Text);
+                var Validar = userControl.loginUser(txtUsuario.Text,txtContrasena.Text);
                 if (Validar)
                 {
                     this.Hide();
