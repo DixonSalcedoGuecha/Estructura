@@ -18,7 +18,7 @@ namespace Modelo
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select * from tbl_Usuario where NumeroDocumento = " + User + " and Contrasena = '" + Password + "'";
+                    command.CommandText = "select * from tbl_Usuario where users = " + User + " and password = '" + Password + "'";
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)

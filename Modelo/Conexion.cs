@@ -8,7 +8,7 @@ namespace ConnectionToSql
     {
         private readonly string connectionstring;
         public Conexion() { 
-        connectionstring = "Server= DESKTOP-MUAS3NV; Database= Billar; User Id = sa; Password= administrador;";
+        connectionstring = "Server= DESKTOP-MUAS3NV; Database= MobileStoreFinal; User Id = sa; Password= administrador;";
         }
 
           
