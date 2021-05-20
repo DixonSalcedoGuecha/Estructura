@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Controlador;
 
 namespace PRUEBA_FINAL
 {
@@ -40,6 +41,18 @@ namespace PRUEBA_FINAL
             frmProductos productos = new frmProductos();
             productos.Show();
             this.Hide();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            ControlProducto producto = new ControlProducto();
+            producto.registroProducto(txtNombreProducto.Text,txtDescripcion.Text,txtUbicacion.Text,Convert.ToInt32(txtCategoria.Text), Convert.ToInt64(txtValor.Text));
+            MessageBox.Show("Producto registrado correctamente");
+            txtNombreProducto.Text = "";
+            txtDescripcion.Text = "";
+            txtCategoria.Text = "";
+            txtUbicacion.Text = "";
+            txtValor.Text = "";
         }
     }
 }
