@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ConnectionToSql;
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using ConnectionToSql;
 
 namespace Modelo
 {
-    public class UserDatos:Conexion
+    public class UserDatos : Conexion
     {
         public bool login(String User, String Password)
         {

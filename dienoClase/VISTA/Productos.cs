@@ -46,5 +46,10 @@ namespace PRUEBA_FINAL
             Inventario.Show();
             this.Hide();
         }
+
+        private void frmProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
