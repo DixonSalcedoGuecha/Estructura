@@ -45,14 +45,24 @@ namespace PRUEBA_FINAL
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            ControlProducto producto = new ControlProducto();
-            producto.registroProducto(txtNombreProducto.Text,txtDescripcion.Text,txtUbicacion.Text,Convert.ToInt32(txtCategoria.Text), Convert.ToInt64(txtValor.Text));
-            MessageBox.Show("Producto registrado correctamente");
-            txtNombreProducto.Text = "";
-            txtDescripcion.Text = "";
-            txtCategoria.Text = "";
-            txtUbicacion.Text = "";
-            txtValor.Text = "";
+            try
+            {
+                ControlProducto producto = new ControlProducto();
+                producto.registroProducto(txtNombreProducto.Text, txtDescripcion.Text, txtUbicacion.Text, (txtCategoria.Text), (txtValor.Text));
+                MessageBox.Show("Producto registrado correctamente");
+                txtNombreProducto.Text = "";
+                txtDescripcion.Text = "";
+                txtCategoria.Text = "";
+                txtUbicacion.Text = "";
+                txtValor.Text = "";
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("No fue posible realizar la insercion de sus datos debido a \n" + ex);
+            }
+                       
+            
         }
     }
 }
