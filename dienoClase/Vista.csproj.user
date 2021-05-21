@@ -19,6 +19,9 @@
     <Compile Update="VISTA\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VISTA\ListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="VISTA\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

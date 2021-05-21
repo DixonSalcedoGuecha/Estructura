@@ -140,13 +140,15 @@ namespace PRUEBA_FINAL
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnEditar.ForeColor = System.Drawing.Color.LightGray;
             this.btnEditar.Location = new System.Drawing.Point(751, 606);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(120, 68);
             this.btnEditar.TabIndex = 11;
             this.btnEditar.Text = "APLICAR CAMBIOS";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // label8
@@ -163,13 +165,15 @@ namespace PRUEBA_FINAL
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button4.ForeColor = System.Drawing.Color.LightGray;
             this.button4.Location = new System.Drawing.Point(889, 606);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 68);
             this.button4.TabIndex = 13;
             this.button4.Text = "SALIR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // ptbBuscar
@@ -195,6 +199,8 @@ namespace PRUEBA_FINAL
             // 
             // txtBuscar
             // 
+            this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtBuscar.ForeColor = System.Drawing.Color.Gray;
             this.txtBuscar.Location = new System.Drawing.Point(124, 129);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
@@ -203,24 +209,30 @@ namespace PRUEBA_FINAL
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
             this.btnEliminar.Location = new System.Drawing.Point(609, 606);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(120, 68);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "ELIMINAR";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // txtId
             // 
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtId.ForeColor = System.Drawing.Color.Gray;
             this.txtId.Location = new System.Drawing.Point(249, 188);
             this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(288, 27);
-            this.txtId.TabIndex = 18;
+            this.txtId.TabIndex = 16;
             // 
             // txtNombre
             // 
+            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtNombre.ForeColor = System.Drawing.Color.Gray;
             this.txtNombre.Location = new System.Drawing.Point(249, 239);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
@@ -229,6 +241,8 @@ namespace PRUEBA_FINAL
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtDescripcion.ForeColor = System.Drawing.Color.Gray;
             this.txtDescripcion.Location = new System.Drawing.Point(249, 286);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
@@ -237,6 +251,8 @@ namespace PRUEBA_FINAL
             // 
             // txtUbicacion
             // 
+            this.txtUbicacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtUbicacion.ForeColor = System.Drawing.Color.Gray;
             this.txtUbicacion.Location = new System.Drawing.Point(249, 330);
             this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUbicacion.Name = "txtUbicacion";
@@ -245,6 +261,8 @@ namespace PRUEBA_FINAL
             // 
             // txtEstado
             // 
+            this.txtEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtEstado.ForeColor = System.Drawing.Color.Gray;
             this.txtEstado.Location = new System.Drawing.Point(249, 376);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstado.Name = "txtEstado";
@@ -253,6 +271,8 @@ namespace PRUEBA_FINAL
             // 
             // txtValor
             // 
+            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtValor.ForeColor = System.Drawing.Color.Gray;
             this.txtValor.Location = new System.Drawing.Point(249, 426);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValor.Name = "txtValor";
@@ -261,6 +281,8 @@ namespace PRUEBA_FINAL
             // 
             // txtTipo
             // 
+            this.txtTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtTipo.ForeColor = System.Drawing.Color.Gray;
             this.txtTipo.Location = new System.Drawing.Point(249, 478);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTipo.Name = "txtTipo";

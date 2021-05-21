@@ -23,7 +23,7 @@ namespace Modelo
            
                 command.Connection = connection;
                 command.CommandText = "INSERT INTO Producto(nombreProducto ,descripcion ,ubicacionProducto ,valorProducto ,tipoProducto )" +
-                                      "VALUES('" + Nombre + "'," + "'" + Descripcion + "'," + "'," + Ubicacion + "'," + "" + Valor + "," + Tipo + ") ";
+                                      "VALUES('" + Nombre + "'," + "'" + Descripcion + "'," + "'" + Ubicacion + "'," + "" + Valor + "," + Tipo + ") ";
                 command.CommandType = CommandType.Text;
                 command.ExecuteNonQuery();
 
@@ -63,7 +63,7 @@ namespace Modelo
             command.Connection = ConexionBD;
             command.CommandText = "Update Producto set nombreProducto = '" + Nombre +"', Descripcion = '"+ Descripcion +
                                                     "', ubicacionProducto = '" + Ubicacion + "', tipoProducto = " + Tipo + ", valorProducto =" + Valor +
-                                                    ", Estado = "+ Estado + " Where nombreProducto = '" + Buscar+"'";
+                                                    ", Estado = "+ Estado + " Where nombreProducto = '" +Buscar+"'";
             command.ExecuteNonQuery();
             ConexionBD.Close();
 
@@ -80,29 +80,25 @@ namespace Modelo
             command.CommandText = "Select Top 1 idProducto, nombreProducto, Descripcion, ubicacionProducto, tipoProducto, valorProducto, Estado from Producto where nombreProducto = '" + Nombre + "'";
             command.CommandType = CommandType.Text;
             leerDatos = command.ExecuteReader();
-            //if (leerDatos.Read())
             leerDatos.Read();
 
             List<string> guardarDatos = new List<string>();
-            //int contar = 0;
-           
-                guardarDatos.Add(leerDatos[0].ToString());
-                guardarDatos.Add(leerDatos[1].ToString());
-                guardarDatos.Add(leerDatos[2].ToString());
-                guardarDatos.Add(leerDatos[3].ToString());
-                guardarDatos.Add(leerDatos[4].ToString());
-                guardarDatos.Add(leerDatos[5].ToString());
-                guardarDatos.Add(leerDatos[6].ToString());
-               
-                
-            
-            return guardarDatos;
 
-            //else
+            //while (leerDatos.Read())
             //{
-            //    leerDatos["NULL"].ToString();
+            //    guardarDatos.Add(leerDatos.ToString());
             //}
+            guardarDatos.Add(leerDatos[0].ToString());
+            guardarDatos.Add(leerDatos[1].ToString());
+            guardarDatos.Add(leerDatos[2].ToString());
+            guardarDatos.Add(leerDatos[3].ToString());
+            guardarDatos.Add(leerDatos[4].ToString());
+            guardarDatos.Add(leerDatos[5].ToString());
+            guardarDatos.Add(leerDatos[6].ToString());
 
+
+
+            return guardarDatos;
             ConexionBD.Close();
 
         }

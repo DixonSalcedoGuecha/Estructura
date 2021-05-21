@@ -29,6 +29,8 @@ namespace Registro_Usuario
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgwInventario = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SALIR = new System.Windows.Forms.Button();
@@ -40,13 +42,38 @@ namespace Registro_Usuario
             // 
             // dgwInventario
             // 
-            this.dgwInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgwInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgwInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwInventario.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgwInventario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgwInventario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgwInventario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwInventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgwInventario.ColumnHeadersHeight = 35;
+            this.dgwInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgwInventario.EnableHeadersVisualStyles = false;
+            this.dgwInventario.GridColor = System.Drawing.Color.LightGray;
             this.dgwInventario.Location = new System.Drawing.Point(0, 102);
             this.dgwInventario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgwInventario.Name = "dgwInventario";
+            this.dgwInventario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgwInventario.RowHeadersWidth = 51;
-            this.dgwInventario.Size = new System.Drawing.Size(1083, 594);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgwInventario.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgwInventario.Size = new System.Drawing.Size(1178, 594);
             this.dgwInventario.TabIndex = 0;
             this.dgwInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwInventario_CellContentClick);
             // 
@@ -60,14 +87,16 @@ namespace Registro_Usuario
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1083, 103);
+            this.panel1.Size = new System.Drawing.Size(1178, 103);
             this.panel1.TabIndex = 1;
             // 
             // SALIR
             // 
+            this.SALIR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SALIR.AutoSize = true;
             this.SALIR.BackColor = System.Drawing.Color.Maroon;
             this.SALIR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SALIR.Location = new System.Drawing.Point(884, 18);
+            this.SALIR.Location = new System.Drawing.Point(930, 20);
             this.SALIR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SALIR.Name = "SALIR";
             this.SALIR.Size = new System.Drawing.Size(140, 52);
@@ -78,6 +107,8 @@ namespace Registro_Usuario
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -94,7 +125,7 @@ namespace Registro_Usuario
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1083, 696);
+            this.ClientSize = new System.Drawing.Size(1178, 696);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgwInventario);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

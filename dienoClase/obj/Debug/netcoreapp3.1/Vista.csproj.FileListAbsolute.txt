@@ -33,3 +33,4 @@ E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\Vista.cspr
 E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\Vista.dll
 E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\Vista.pdb
 E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\Vista.genruntimeconfig.cache
+E:\UNIVERSIDAD\ESTRUCTURA DE DATOS\dienoClase\obj\Debug\netcoreapp3.1\Vista.VISTA.ListaUsuarios.resources

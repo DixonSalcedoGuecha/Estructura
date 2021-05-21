@@ -120,56 +120,72 @@ namespace PRUEBA_FINAL
             // 
             // txtNombreProducto
             // 
+            this.txtNombreProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtNombreProducto.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNombreProducto.ForeColor = System.Drawing.Color.Gray;
             this.txtNombreProducto.Location = new System.Drawing.Point(261, 221);
             this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(337, 27);
+            this.txtNombreProducto.Size = new System.Drawing.Size(337, 35);
             this.txtNombreProducto.TabIndex = 10;
             // 
             // txtCategoria
             // 
+            this.txtCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtCategoria.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCategoria.ForeColor = System.Drawing.Color.Gray;
             this.txtCategoria.Location = new System.Drawing.Point(260, 262);
             this.txtCategoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(337, 27);
+            this.txtCategoria.Size = new System.Drawing.Size(337, 35);
             this.txtCategoria.TabIndex = 12;
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtDescripcion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescripcion.ForeColor = System.Drawing.Color.Gray;
             this.txtDescripcion.Location = new System.Drawing.Point(260, 301);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(337, 27);
+            this.txtDescripcion.Size = new System.Drawing.Size(337, 35);
             this.txtDescripcion.TabIndex = 13;
             // 
             // txtValor
             // 
+            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtValor.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValor.ForeColor = System.Drawing.Color.Gray;
             this.txtValor.Location = new System.Drawing.Point(260, 338);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(337, 27);
+            this.txtValor.Size = new System.Drawing.Size(337, 35);
             this.txtValor.TabIndex = 14;
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnRegistrar.ForeColor = System.Drawing.Color.LightGray;
             this.btnRegistrar.Location = new System.Drawing.Point(732, 615);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(150, 59);
-            this.btnRegistrar.TabIndex = 15;
+            this.btnRegistrar.TabIndex = 16;
             this.btnRegistrar.Text = "REGISTRAR";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button2.ForeColor = System.Drawing.Color.LightGray;
             this.button2.Location = new System.Drawing.Point(906, 615);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 59);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 17;
             this.button2.Text = "SALIR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label9
@@ -208,11 +224,14 @@ namespace PRUEBA_FINAL
             // 
             // txtUbicacion
             // 
+            this.txtUbicacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtUbicacion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUbicacion.ForeColor = System.Drawing.Color.Gray;
             this.txtUbicacion.Location = new System.Drawing.Point(261, 375);
             this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUbicacion.Name = "txtUbicacion";
-            this.txtUbicacion.Size = new System.Drawing.Size(337, 27);
-            this.txtUbicacion.TabIndex = 26;
+            this.txtUbicacion.Size = new System.Drawing.Size(337, 35);
+            this.txtUbicacion.TabIndex = 15;
             // 
             // pbxFoto
             // 

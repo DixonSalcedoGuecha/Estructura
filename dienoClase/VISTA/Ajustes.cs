@@ -2,6 +2,7 @@
 using Registro_Usuario;
 using System;
 using System.Windows.Forms;
+using Vista.VISTA;
 
 namespace PRUEBA_FINAL
 {
@@ -33,6 +34,13 @@ namespace PRUEBA_FINAL
         {
             IdMenuPrincipal menuPrincipal = new IdMenuPrincipal();
             menuPrincipal.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ListaUsuarios listaUsuarios = new ListaUsuarios();
+            listaUsuarios.Show();
             this.Hide();
         }
     }
