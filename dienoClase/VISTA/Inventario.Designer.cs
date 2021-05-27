@@ -45,7 +45,8 @@ namespace Registro_Usuario
             this.dgwInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgwInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgwInventario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgwInventario.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgwInventario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgwInventario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -75,7 +76,6 @@ namespace Registro_Usuario
             this.dgwInventario.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgwInventario.Size = new System.Drawing.Size(1178, 594);
             this.dgwInventario.TabIndex = 0;
-            this.dgwInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwInventario_CellContentClick);
             // 
             // panel1
             // 

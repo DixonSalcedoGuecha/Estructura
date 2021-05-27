@@ -28,9 +28,6 @@ namespace Registro_Usuario
             dgwInventario.DataSource = ControlProducto.mostrarProductos();
              
         }
-        private void dgwInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
     }
 }

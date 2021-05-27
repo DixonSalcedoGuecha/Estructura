@@ -29,6 +29,7 @@ namespace PRUEBA_FINAL
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@ namespace PRUEBA_FINAL
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -46,9 +46,13 @@ namespace PRUEBA_FINAL
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUbicacion = new System.Windows.Forms.TextBox();
             this.pbxFoto = new System.Windows.Forms.PictureBox();
+            this.btnFoto = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,7 +76,6 @@ namespace PRUEBA_FINAL
             this.label1.Size = new System.Drawing.Size(242, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "REGISTRO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -128,17 +131,6 @@ namespace PRUEBA_FINAL
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(337, 35);
             this.txtNombreProducto.TabIndex = 10;
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtCategoria.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCategoria.ForeColor = System.Drawing.Color.Gray;
-            this.txtCategoria.Location = new System.Drawing.Point(260, 262);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(337, 35);
-            this.txtCategoria.TabIndex = 12;
             // 
             // txtDescripcion
             // 
@@ -198,7 +190,6 @@ namespace PRUEBA_FINAL
             this.label9.Size = new System.Drawing.Size(127, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "FOTO PRODUCTO:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -242,12 +233,39 @@ namespace PRUEBA_FINAL
             this.pbxFoto.TabIndex = 27;
             this.pbxFoto.TabStop = false;
             // 
+            // btnFoto
+            // 
+            this.btnFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnFoto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnFoto.ForeColor = System.Drawing.Color.LightGray;
+            this.btnFoto.Location = new System.Drawing.Point(58, 592);
+            this.btnFoto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(127, 35);
+            this.btnFoto.TabIndex = 28;
+            this.btnFoto.Text = "SUBIR";
+            this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // cbxTipo
+            // 
+            this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.cbxTipo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxTipo.ForeColor = System.Drawing.Color.Gray;
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Location = new System.Drawing.Point(259, 264);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(338, 36);
+            this.cbxTipo.TabIndex = 29;
+            // 
             // frmRegistrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1067, 692);
+            this.Controls.Add(this.cbxTipo);
+            this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.pbxFoto);
             this.Controls.Add(this.txtUbicacion);
             this.Controls.Add(this.label10);
@@ -257,7 +275,6 @@ namespace PRUEBA_FINAL
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -267,10 +284,12 @@ namespace PRUEBA_FINAL
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmRegistrarProducto";
             this.Text = "Registrar Producto";
+            this.Load += new System.EventHandler(this.frmRegistrarProducto_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +304,6 @@ namespace PRUEBA_FINAL
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtNombreProducto;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Button btnRegistrar;
@@ -295,5 +313,8 @@ namespace PRUEBA_FINAL
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtUbicacion;
         private System.Windows.Forms.PictureBox pbxFoto;
+        private System.Windows.Forms.Button btnFoto;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.ComboBox cbxTipo;
     }
 }

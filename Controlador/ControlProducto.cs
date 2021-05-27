@@ -11,9 +11,9 @@ namespace Controlador
         ProductoDatos producto = new ProductoDatos();
 
         //Controlador para el registro de productos
-        public void registroProducto(string Nombre, string Descripcion, string Ubicacion, string Tipo, string Valor) 
+        public void registroProducto(string Nombre, string Descripcion, string Ubicacion, int Tipo, string Valor, byte[] foto) 
         {
-            producto.registro(Nombre,Descripcion,Ubicacion, Convert.ToInt32(Tipo), Convert.ToInt64(Valor));
+            producto.registro(Nombre,Descripcion,Ubicacion, (Tipo), Convert.ToInt64(Valor), foto);
         }
 
         //Controlador para el inventario de productos
@@ -25,18 +25,37 @@ namespace Controlador
             return tabla;
         }
 
+        public DataTable mostrarTiposProductos()
+        {
+            DataTable tabla = new DataTable();
+            tabla = producto.listaTipos();
+            return tabla;
+        }
+
         //Controlador para la edicion de productos
 
-        public void editarProducto(string Buscar,string Nombre, string Descripcion, string Ubicacion, string Tipo, string Valor, string Estado)
+        public void editarProducto(string Buscar,string Nombre, string Descripcion, string Ubicacion, int Tipo, string Valor, string Estado, byte[] Foto)
         {
-            producto.editarProducto( Buscar,Nombre,  Descripcion,  Ubicacion,  Convert.ToInt32(Tipo), Convert.ToInt64(Valor), Convert.ToInt32(Estado));
+            producto.editarProducto( Buscar,Nombre,  Descripcion,  Ubicacion,  (Tipo), Convert.ToInt64(Valor), (Estado), Foto);
 
+        }
+
+        public void eliminarProducto(string id)
+        {
+            producto.elimarProductos(Convert.ToInt32(id));
         }
 
         public List<string> buscarProducto(string Nombre)
         {
             return producto.buscarProductos(Nombre);
         }
+
+        public byte[] buscarFoto(string Nombre)
+        {
+            return producto.buscarFoto(Nombre);
+        }
+
+
         
 
     }

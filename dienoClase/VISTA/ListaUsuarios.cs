@@ -36,7 +36,7 @@ namespace Vista.VISTA
             {
                 try
                 {
-                    usuario.registroUsuario(txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text);
+                    usuario.registroUsuario(txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text, txtDocumento.Text);
                     mostrarUsuarios();
                     limpiarDatos();
                 }
@@ -50,7 +50,7 @@ namespace Vista.VISTA
             {
                 try
                 {
-                    usuario.editarUsuario(txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text,id);
+                    usuario.editarUsuario(txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text,id,txtDocumento.Text);
                     mostrarUsuarios();
                     limpiarDatos();
                     Editar = false;
@@ -99,6 +99,7 @@ namespace Vista.VISTA
             txtDireccion.Text = "";
             txtTelefono.Text = "";
             txtEmail.Text = "";
+            txtDocumento.Text = "";
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

@@ -40,20 +40,21 @@ namespace PRUEBA_FINAL
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.ptbBuscar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxFoto = new System.Windows.Forms.PictureBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtUbicacion = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnFoto = new System.Windows.Forms.Button();
+            this.cbxEstado = new System.Windows.Forms.ComboBox();
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -188,23 +189,26 @@ namespace PRUEBA_FINAL
             this.ptbBuscar.TabStop = false;
             this.ptbBuscar.Click += new System.EventHandler(this.ptbBuscar_Click);
             // 
-            // pictureBox1
+            // pbxFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(661, 151);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 334);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbxFoto.Location = new System.Drawing.Point(661, 151);
+            this.pbxFoto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxFoto.Name = "pbxFoto";
+            this.pbxFoto.Size = new System.Drawing.Size(348, 334);
+            this.pbxFoto.TabIndex = 1;
+            this.pbxFoto.TabStop = false;
             // 
             // txtBuscar
             // 
+            this.txtBuscar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtBuscar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtBuscar.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBuscar.ForeColor = System.Drawing.Color.Gray;
             this.txtBuscar.Location = new System.Drawing.Point(124, 129);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(413, 27);
+            this.txtBuscar.Size = new System.Drawing.Size(413, 33);
             this.txtBuscar.TabIndex = 15;
             // 
             // btnEliminar
@@ -218,76 +222,62 @@ namespace PRUEBA_FINAL
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtId.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.ForeColor = System.Drawing.Color.Gray;
             this.txtId.Location = new System.Drawing.Point(249, 188);
             this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(288, 27);
+            this.txtId.Size = new System.Drawing.Size(288, 33);
             this.txtId.TabIndex = 16;
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtNombre.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNombre.ForeColor = System.Drawing.Color.Gray;
             this.txtNombre.Location = new System.Drawing.Point(249, 239);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(288, 27);
+            this.txtNombre.Size = new System.Drawing.Size(288, 33);
             this.txtNombre.TabIndex = 19;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtDescripcion.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDescripcion.ForeColor = System.Drawing.Color.Gray;
             this.txtDescripcion.Location = new System.Drawing.Point(249, 286);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(288, 27);
+            this.txtDescripcion.Size = new System.Drawing.Size(288, 33);
             this.txtDescripcion.TabIndex = 20;
             // 
             // txtUbicacion
             // 
             this.txtUbicacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtUbicacion.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUbicacion.ForeColor = System.Drawing.Color.Gray;
             this.txtUbicacion.Location = new System.Drawing.Point(249, 330);
             this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUbicacion.Name = "txtUbicacion";
-            this.txtUbicacion.Size = new System.Drawing.Size(288, 27);
+            this.txtUbicacion.Size = new System.Drawing.Size(288, 33);
             this.txtUbicacion.TabIndex = 21;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtEstado.ForeColor = System.Drawing.Color.Gray;
-            this.txtEstado.Location = new System.Drawing.Point(249, 376);
-            this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(288, 27);
-            this.txtEstado.TabIndex = 22;
             // 
             // txtValor
             // 
             this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtValor.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtValor.ForeColor = System.Drawing.Color.Gray;
             this.txtValor.Location = new System.Drawing.Point(249, 426);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(288, 27);
+            this.txtValor.Size = new System.Drawing.Size(288, 33);
             this.txtValor.TabIndex = 23;
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtTipo.ForeColor = System.Drawing.Color.Gray;
-            this.txtTipo.Location = new System.Drawing.Point(249, 478);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(288, 27);
-            this.txtTipo.TabIndex = 24;
             // 
             // label4
             // 
@@ -301,16 +291,52 @@ namespace PRUEBA_FINAL
             this.label4.TabIndex = 25;
             this.label4.Text = "TIPO";
             // 
+            // btnFoto
+            // 
+            this.btnFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnFoto.ForeColor = System.Drawing.Color.LightGray;
+            this.btnFoto.Location = new System.Drawing.Point(661, 495);
+            this.btnFoto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(348, 49);
+            this.btnFoto.TabIndex = 26;
+            this.btnFoto.Text = "Nueva Foto";
+            this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // cbxEstado
+            // 
+            this.cbxEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.cbxEstado.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxEstado.ForeColor = System.Drawing.Color.Gray;
+            this.cbxEstado.FormattingEnabled = true;
+            this.cbxEstado.Location = new System.Drawing.Point(249, 376);
+            this.cbxEstado.Name = "cbxEstado";
+            this.cbxEstado.Size = new System.Drawing.Size(287, 32);
+            this.cbxEstado.TabIndex = 30;
+            // 
+            // cbxTipo
+            // 
+            this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.cbxTipo.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxTipo.ForeColor = System.Drawing.Color.Gray;
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Location = new System.Drawing.Point(248, 482);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(288, 32);
+            this.cbxTipo.TabIndex = 31;
+            // 
             // frmEditarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1067, 692);
+            this.ClientSize = new System.Drawing.Size(1017, 692);
+            this.Controls.Add(this.cbxTipo);
+            this.Controls.Add(this.cbxEstado);
+            this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtUbicacion);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
@@ -326,15 +352,16 @@ namespace PRUEBA_FINAL
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxFoto);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmEditarProducto";
             this.Text = "Editar Producto";
+            this.Load += new System.EventHandler(this.frmEditarProducto_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +371,7 @@ namespace PRUEBA_FINAL
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxFoto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
@@ -360,9 +387,10 @@ namespace PRUEBA_FINAL
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtUbicacion;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnFoto;
+        private System.Windows.Forms.ComboBox cbxEstado;
+        private System.Windows.Forms.ComboBox cbxTipo;
     }
 }

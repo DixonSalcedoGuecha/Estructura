@@ -41,7 +41,7 @@ namespace Modelo
             using var ConexionBD = GetConnection();
             ConexionBD.Open();
             command.Connection = ConexionBD;
-            command.CommandText = "select idAdministrador as id,nombres,apellidos,direccion,telefono,email from Usuario";
+            command.CommandText = "select idAdministrador as id,nombres,apellidos,direccion,telefono,email,users as Documento from Usuario";
             command.CommandType = CommandType.Text;
             leerDatos = command.ExecuteReader();
             tabla.Load(leerDatos);
@@ -50,14 +50,14 @@ namespace Modelo
 
         }
 
-        public void registroUsuario(string Nombre, string Apellidos, string direccion, double telefono, string email)
+        public void registroUsuario(string Nombre, string Apellidos, string direccion, double telefono, string email, string documento)
         {
             using var connection = GetConnection();
             connection.Open();
 
             command.Connection = connection;
-            command.CommandText = "INSERT INTO Usuario(nombres,apellidos,direccion,telefono,email)" +
-                                  "VALUES('" + Nombre + "'," + "'" + Apellidos + "'," + "'" + direccion + "'," + "" + telefono + ",'" + email + "') ";
+            command.CommandText = "INSERT INTO Usuario(nombres,apellidos,direccion,telefono,email, users)" +
+                                  "VALUES('" + Nombre + "'," + "'" + Apellidos + "'," + "'" + direccion + "'," + "" + telefono + ",'" + email + "','"+documento+"') ";
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
 
@@ -66,13 +66,13 @@ namespace Modelo
 
         }
 
-        public void editarUsuario(string Nombre, string Apellidos, string direccion, double telefono, string email, int id)
+        public void editarUsuario(string Nombre, string Apellidos, string direccion, double telefono, string email, int id, string documento)
         {
             using var connection = GetConnection();
             connection.Open();
 
             command.Connection = connection;
-            command.CommandText = "UPDATE Usuario set nombres = '" + Nombre + "',apellidos = " + "'" + Apellidos + "'" + ",direccion = '" + direccion + "' ,telefono = "+ telefono + ", email ='" + email + "' Where idAdministrador = " + id +"";
+            command.CommandText = "UPDATE Usuario set nombres = '" + Nombre + "',apellidos = " + "'" + Apellidos + "'" + ",direccion = '" + direccion + "' ,telefono = "+ telefono + ", email ='" + email + "', users = '" + documento +"'  Where idAdministrador = " + id +"";
             command.CommandType = CommandType.Text;
             command.ExecuteNonQuery();
 
