@@ -26,24 +26,31 @@ namespace PRUEBA_FINAL
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            string id = "";
             try
             {
 
-                
+
                 MemoryStream ms = new MemoryStream();
                 pbxFoto.Image.Save(ms,ImageFormat.Png);
                 byte[] ImgByte = ms.ToArray();
 
 
                 producto.registroProducto(txtNombreProducto.Text, txtDescripcion.Text, txtUbicacion.Text, cbxTipo.SelectedIndex, (txtValor.Text), ImgByte);
+                producto.buscarProducto(txtNombreProducto.Text);
+                id = producto.buscarProducto(txtNombreProducto.Text)[0];
+                producto.registroCantidadProducto(txtCantidad.Text, id);
+
                 MessageBox.Show("Producto registrado correctamente");
                 txtNombreProducto.Text = "";
                 txtDescripcion.Text = "";
-               // txtCategoria.Text = "";
                 txtUbicacion.Text = "";
                 txtValor.Text = "";
+                txtCantidad.Text = "";
                 pbxFoto.Image = null;
-            }
+
+
+        }
             catch (Exception ex)
             {
 
@@ -56,7 +63,7 @@ namespace PRUEBA_FINAL
 private void btnFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog subir = new OpenFileDialog();
-            subir.Filter = "Imagenes|*.jpg; *.png;";
+            subir.Filter = "Imagenes|*.jpg; *.png;*.jpeg;";
             subir.Title = "Seleccione una imagen";
             if (subir.ShowDialog() == DialogResult.OK)
             {
@@ -73,5 +80,7 @@ private void btnFoto_Click(object sender, EventArgs e)
             cbxTipo.DisplayMember = "descripcion";
             cbxTipo.ValueMember = "idtipoProducto";
         }
+
+       
     }
 }

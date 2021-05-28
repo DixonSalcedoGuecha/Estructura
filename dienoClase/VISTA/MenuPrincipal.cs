@@ -2,7 +2,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
+using Vista.VISTA;
 
 namespace InicioSesion.VISTA
 {
@@ -48,6 +48,14 @@ namespace InicioSesion.VISTA
             frmAjustes ajustes = new frmAjustes();
             ajustes.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmReservaProducto reserva = new frmReservaProducto();
+            reserva.Show();
+            this.Hide();
+            
         }
     }
 }

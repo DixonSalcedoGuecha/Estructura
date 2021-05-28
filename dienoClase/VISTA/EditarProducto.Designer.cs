@@ -52,6 +52,8 @@ namespace PRUEBA_FINAL
             this.btnFoto = new System.Windows.Forms.Button();
             this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.cbxTipo = new System.Windows.Forms.ComboBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
@@ -326,12 +328,37 @@ namespace PRUEBA_FINAL
             this.cbxTipo.Size = new System.Drawing.Size(288, 32);
             this.cbxTipo.TabIndex = 31;
             // 
+            // txtCantidad
+            // 
+            this.txtCantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtCantidad.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.ForeColor = System.Drawing.Color.Gray;
+            this.txtCantidad.Location = new System.Drawing.Point(249, 539);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(288, 33);
+            this.txtCantidad.TabIndex = 33;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(64, 543);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 23);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "CANTIDAD:";
+            // 
             // frmEditarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1017, 692);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.cbxTipo);
             this.Controls.Add(this.cbxEstado);
             this.Controls.Add(this.btnFoto);
@@ -392,5 +419,7 @@ namespace PRUEBA_FINAL
         private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.ComboBox cbxEstado;
         private System.Windows.Forms.ComboBox cbxTipo;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label label9;
     }
 }

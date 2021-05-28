@@ -49,6 +49,8 @@ namespace PRUEBA_FINAL
             this.btnFoto = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cbxTipo = new System.Windows.Forms.ComboBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
@@ -81,7 +83,7 @@ namespace PRUEBA_FINAL
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(60, 226);
+            this.label3.Location = new System.Drawing.Point(59, 178);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 20);
@@ -92,7 +94,7 @@ namespace PRUEBA_FINAL
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(59, 268);
+            this.label6.Location = new System.Drawing.Point(58, 220);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 20);
@@ -103,7 +105,7 @@ namespace PRUEBA_FINAL
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(58, 308);
+            this.label7.Location = new System.Drawing.Point(57, 260);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(184, 20);
@@ -114,7 +116,7 @@ namespace PRUEBA_FINAL
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(60, 345);
+            this.label8.Location = new System.Drawing.Point(59, 297);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 20);
@@ -126,7 +128,7 @@ namespace PRUEBA_FINAL
             this.txtNombreProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtNombreProducto.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNombreProducto.ForeColor = System.Drawing.Color.Gray;
-            this.txtNombreProducto.Location = new System.Drawing.Point(261, 221);
+            this.txtNombreProducto.Location = new System.Drawing.Point(260, 173);
             this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(337, 35);
@@ -137,7 +139,7 @@ namespace PRUEBA_FINAL
             this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtDescripcion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDescripcion.ForeColor = System.Drawing.Color.Gray;
-            this.txtDescripcion.Location = new System.Drawing.Point(260, 301);
+            this.txtDescripcion.Location = new System.Drawing.Point(259, 253);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(337, 35);
@@ -148,7 +150,7 @@ namespace PRUEBA_FINAL
             this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtValor.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtValor.ForeColor = System.Drawing.Color.Gray;
-            this.txtValor.Location = new System.Drawing.Point(260, 338);
+            this.txtValor.Location = new System.Drawing.Point(259, 290);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(337, 35);
@@ -195,7 +197,7 @@ namespace PRUEBA_FINAL
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(58, 382);
+            this.label10.Location = new System.Drawing.Point(55, 342);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 20);
@@ -218,7 +220,7 @@ namespace PRUEBA_FINAL
             this.txtUbicacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtUbicacion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUbicacion.ForeColor = System.Drawing.Color.Gray;
-            this.txtUbicacion.Location = new System.Drawing.Point(261, 375);
+            this.txtUbicacion.Location = new System.Drawing.Point(258, 335);
             this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUbicacion.Name = "txtUbicacion";
             this.txtUbicacion.Size = new System.Drawing.Size(337, 35);
@@ -253,10 +255,32 @@ namespace PRUEBA_FINAL
             this.cbxTipo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbxTipo.ForeColor = System.Drawing.Color.Gray;
             this.cbxTipo.FormattingEnabled = true;
-            this.cbxTipo.Location = new System.Drawing.Point(259, 264);
+            this.cbxTipo.Location = new System.Drawing.Point(258, 216);
             this.cbxTipo.Name = "cbxTipo";
             this.cbxTipo.Size = new System.Drawing.Size(338, 36);
             this.cbxTipo.TabIndex = 29;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtCantidad.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.ForeColor = System.Drawing.Color.Gray;
+            this.txtCantidad.Location = new System.Drawing.Point(258, 380);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(337, 35);
+            this.txtCantidad.TabIndex = 30;
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCantidad.Location = new System.Drawing.Point(55, 387);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(174, 20);
+            this.lblCantidad.TabIndex = 31;
+            this.lblCantidad.Text = "CANTIDAD PRODUCTOS:";
             // 
             // frmRegistrarProducto
             // 
@@ -264,6 +288,8 @@ namespace PRUEBA_FINAL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1067, 692);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.cbxTipo);
             this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.pbxFoto);
@@ -316,5 +342,7 @@ namespace PRUEBA_FINAL
         private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ComboBox cbxTipo;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label lblCantidad;
     }
 }

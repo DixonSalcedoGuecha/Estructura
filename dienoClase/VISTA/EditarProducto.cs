@@ -35,6 +35,7 @@ namespace PRUEBA_FINAL
             try
             {
                 controlProducto.editarProducto(txtBuscar.Text, txtNombre.Text, txtDescripcion.Text, txtUbicacion.Text, cbxTipo.SelectedIndex, txtValor.Text,cbxEstado.SelectedItem.ToString() , ImgByte);
+                controlProducto.editarCantidadProducto(txtCantidad.Text,txtId.Text);
                 MessageBox.Show("Los cambios fueron aplicados con exito");
                 limpiarDatos();
             }
@@ -57,6 +58,7 @@ namespace PRUEBA_FINAL
                 txtUbicacion.Text = controlProducto.buscarProducto(txtBuscar.Text)[3];
                // txtTipo.Text = controlProducto.buscarProducto(txtBuscar.Text)[4];
                 txtValor.Text = controlProducto.buscarProducto(txtBuscar.Text)[5];
+                txtCantidad.Text = controlProducto.buscarProducto(txtBuscar.Text)[8];
                 //txtEstado.Text = controlProducto.buscarProducto(txtBuscar.Text)[6];
                // cbxTipo.DataSource = controlProducto.buscarProducto(txtBuscar.Text);
                // cbxTipo.DisplayMember = controlProducto.buscarProducto(txtBuscar.Text)[6];
@@ -97,7 +99,7 @@ namespace PRUEBA_FINAL
             txtDescripcion.Text = "";
             txtUbicacion.Text = "";
             txtValor.Text = "";
-           
+            txtCantidad.Text = "";
             txtBuscar.Text = "";
             pbxFoto.Image = null;
         }
@@ -105,6 +107,7 @@ namespace PRUEBA_FINAL
         {
             try
             {
+                controlProducto.eliminarCantidadProducto(txtId.Text);
                 controlProducto.eliminarProducto(txtId.Text);
                 MessageBox.Show("Datos eliminados correctamente");
                 limpiarDatos();
@@ -121,7 +124,7 @@ namespace PRUEBA_FINAL
         private void btnFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog subir = new OpenFileDialog();
-            subir.Filter = "Imagenes|*.jpg; *.png;";
+            subir.Filter = "Imagenes|*.jpg; *.png;*.jpeg;";
             subir.Title = "Seleccione una imagen";
             if (subir.ShowDialog() == DialogResult.OK)
             {

@@ -16,12 +16,25 @@ namespace Controlador
             producto.registro(Nombre,Descripcion,Ubicacion, (Tipo), Convert.ToInt64(Valor), foto);
         }
 
+        //Controlador para el registro de Cantidad de productos
+        public void registroCantidadProducto(string Cantidad, string IdProducto)
+        {
+            producto.registroCantidad(Convert.ToInt32(Cantidad), Convert.ToInt32(IdProducto));
+        }
+
         //Controlador para el inventario de productos
 
         public DataTable mostrarProductos()
         {
             DataTable tabla = new DataTable();
             tabla = producto.listaProductos();
+            return tabla;
+        }
+
+        public DataTable mostrarListaReservaProductos()
+        {
+            DataTable tabla = new DataTable();
+            tabla = producto.ReservaListarProductos();
             return tabla;
         }
 
@@ -40,9 +53,21 @@ namespace Controlador
 
         }
 
+        //Controlador para la edicion de Cantidad de productos
+
+        public void editarCantidadProducto(string cantidad, string id)
+        {
+            producto.editarCantidadProducto(Convert.ToInt32(cantidad), Convert.ToInt32(id));
+
+        }
+
         public void eliminarProducto(string id)
         {
             producto.elimarProductos(Convert.ToInt32(id));
+        }
+        public void eliminarCantidadProducto(string id)
+        {
+            producto.elimarCantidadProductos(Convert.ToInt32(id));
         }
 
         public List<string> buscarProducto(string Nombre)

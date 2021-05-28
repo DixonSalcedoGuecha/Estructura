@@ -23,12 +23,32 @@ namespace Modelo
            
                 command.Connection = connection;
                 command.CommandText = "INSERT INTO Producto(nombreProducto ,descripcion ,ubicacionProducto ,valorProducto ,tipoProducto,fotoProducto,estado  )" +
-                                      "VALUES('" + Nombre + "'," + "'" + Descripcion + "'," + "'" + Ubicacion + "'," + "" + Valor + "," + Tipo + ",@imagen, 'Activo') ";
+                                      " VALUES('" + Nombre + "'," + "'" + Descripcion + "'," + "'" + Ubicacion + "'," + "" + Valor + "," + Tipo + ",@imagen, 'Activo') ";
                 command.Parameters.AddWithValue("imagen", Foto);
                 command.CommandType = CommandType.Text;
                 command.ExecuteNonQuery();
 
             
+            connection.Close();
+
+        }
+
+
+        //---------- Dixon Fabian Salcedo --------------
+        //Metodo para realizar el registro de Cantidad de productos
+        //----------------------------------------------
+        public void registroCantidad(int Cantidad, int IdProducto)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO cantidadProducto (cantidadProducto,Producto)" +
+                                  "VALUES(" + Cantidad + "," + "" + IdProducto + ") ";
+            command.CommandType = CommandType.Text;
+            command.ExecuteNonQuery();
+
+
             connection.Close();
 
         }
@@ -45,7 +65,26 @@ namespace Modelo
             using var ConexionBD  = GetConnection() ;
             ConexionBD.Open();
             command.Connection = ConexionBD;
-            command.CommandText = "Select * from Producto";
+            command.CommandText = "Select idProducto, nombreProducto, Descripcion, ubicacionProducto, tipoProducto, valorProducto, Estado, fotoProducto, a.cantidadProducto from Producto "	
+                                  + " INNER JOIN cantidadProducto a   ON idProducto = a.Producto";
+            command.CommandType = CommandType.Text;
+            leerDatos = command.ExecuteReader();
+            tabla.Load(leerDatos);
+            return tabla;
+            ConexionBD.Close();
+
+        }
+
+        public DataTable ReservaListarProductos()
+        {
+            DataTable tabla = new DataTable();
+            SqlDataReader leerDatos;
+
+            using var ConexionBD = GetConnection();
+            ConexionBD.Open();
+            command.Connection = ConexionBD;
+            command.CommandText = "Select idProducto, nombreProducto, Descripcion, valorProducto, Estado, fotoProducto, a.cantidadProducto as Cantidad from Producto "
+                                  + " INNER JOIN cantidadProducto a   ON idProducto = a.Producto";
             command.CommandType = CommandType.Text;
             leerDatos = command.ExecuteReader();
             tabla.Load(leerDatos);
@@ -89,6 +128,20 @@ namespace Modelo
         }
 
         //---------- Dixon Fabian Salcedo --------------
+        //Metodo para realizar la consulta de Cantidad productos
+        //--------------- 20-05-2021 -------------------
+        public void editarCantidadProducto(int Cantidad, int Id)
+        {
+            using var ConexionBD = GetConnection();
+            ConexionBD.Open();
+            command.Connection = ConexionBD;
+            command.CommandText = "UPDATE cantidadProducto   SET cantidadProducto = " + Cantidad + "    WHERE Producto = " + Id + "";
+            command.ExecuteNonQuery();
+            ConexionBD.Close();
+
+        }
+
+        //---------- Dixon Fabian Salcedo --------------
         //Metodo para realizar la eliminacion de productos
         //--------------- 26-05-2021 -------------------
 
@@ -101,6 +154,15 @@ namespace Modelo
             command.ExecuteNonQuery();
             ConexionBD.Close();
         }
+        public void elimarCantidadProductos(int id)
+        {
+            using var ConexionBD = GetConnection();
+            ConexionBD.Open();
+            command.Connection = ConexionBD;
+            command.CommandText = "Delete from cantidadProducto Where Producto = " + id + "";
+            command.ExecuteNonQuery();
+            ConexionBD.Close();
+        }
 
         public List<string> buscarProductos(string Nombre)
         {
@@ -110,17 +172,16 @@ namespace Modelo
             using var ConexionBD = GetConnection();
             ConexionBD.Open();
             command.Connection = ConexionBD;
-            command.CommandText = "Select Top 1 idProducto, nombreProducto, Descripcion, ubicacionProducto, tipoProducto, valorProducto, Estado, fotoProducto from Producto where nombreProducto = '" + Nombre + "'";
+            command.CommandText = "Select Top 1 idProducto, nombreProducto, Descripcion, ubicacionProducto, tipoProducto, valorProducto, Estado, fotoProducto, a.cantidadProducto " +
+                                " from Producto " +
+                                " LEFT JOIN cantidadProducto a ON idProducto = a.Producto" +
+                                " WHERE  nombreProducto = '" + Nombre + "'";
             command.CommandType = CommandType.Text;
             leerDatos = command.ExecuteReader();
             leerDatos.Read();
 
             List<string> guardarDatos = new List<string>();
 
-            //while (leerDatos.Read())
-            //{
-            //    guardarDatos.Add(leerDatos.ToString());
-            //}
             guardarDatos.Add(leerDatos[0].ToString());
             guardarDatos.Add(leerDatos[1].ToString());
             guardarDatos.Add(leerDatos[2].ToString());
@@ -129,6 +190,7 @@ namespace Modelo
             guardarDatos.Add(leerDatos[5].ToString());
             guardarDatos.Add(leerDatos[6].ToString());
             guardarDatos.Add(leerDatos[7].ToString());
+            guardarDatos.Add(leerDatos[8].ToString());
 
 
 
@@ -136,10 +198,7 @@ namespace Modelo
             ConexionBD.Close();
 
         }
-        //----------------------------------------------------
-        //----------------------------------------------------
-        //----------------------------------------------------
-
+      
         public byte[] buscarFoto(string Nombre)
         {
 

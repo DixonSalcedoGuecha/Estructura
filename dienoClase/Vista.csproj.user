@@ -31,5 +31,8 @@
     <Compile Update="VISTA\RegistrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VISTA\ReservaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

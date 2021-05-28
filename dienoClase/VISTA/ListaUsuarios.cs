@@ -83,6 +83,7 @@ namespace Vista.VISTA
                 txtDireccion.Text = dtgvMostrarUsuarios.CurrentRow.Cells["direccion"].Value.ToString();
                 txtTelefono.Text = dtgvMostrarUsuarios.CurrentRow.Cells["telefono"].Value.ToString();
                 txtEmail.Text = dtgvMostrarUsuarios.CurrentRow.Cells["email"].Value.ToString();
+                txtDocumento.Text = dtgvMostrarUsuarios.CurrentRow.Cells["Documento"].Value.ToString();
                 id = dtgvMostrarUsuarios.CurrentRow.Cells["id"].Value.ToString();
 
             }
